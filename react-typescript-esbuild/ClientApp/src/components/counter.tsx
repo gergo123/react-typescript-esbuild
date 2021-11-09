@@ -9,11 +9,11 @@ const Counter = (props: { message: string }) => {
         setCount(count => count + 1);
     };
 
-    return (<div className="mx-auto max-w-max font-serif">
-        <h1 className="text-4xl font-bold mx-3 my-3">{props.message}</h1>
-        <div className="text-center text-gray-500">Count: {count}</div>
+    return (<div className="mx-auto max-w-max font-serif bg-gray-100 rounded-xl shadow-md p-6">
+        <h1 className="text-xl font-medium text-black">{props.message}</h1>
+        <div className="my-2 text-center text-gray-500">Count: {count}</div>
         <button
-            className="font-mono mx-3 mt-3 rounded bg-green-500 shadow-lg px-8 min-w-full py-2 font-bold text-2xl text-green-50 hover:text-yellow-400 active:bg-green-700"
+            className="font-mono rounded bg-green-500 shadow-lg px-8 min-w-full py-2 font-bold text-2xl text-green-50  hover:bg-green-400 active:bg-green-700"
             onClick={increment}
         >
             Click me
