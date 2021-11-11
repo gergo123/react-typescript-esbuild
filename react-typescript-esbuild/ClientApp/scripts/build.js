@@ -3,7 +3,8 @@ const tailwind = require('tailwindcss')
 const postCssPlugin = require("@deanc/esbuild-plugin-postcss");
 const glob = require('tiny-glob');
 
-const watch = process.argv.includes("--watch") && {
+const isInWatchMode = process.argv.includes("--watch");
+const watch = isInWatchMode && {
     onRebuild(error, result) {
         if (error) console.error('watch build failed:', error)
         else console.log('watch build succeeded:', result)
@@ -20,6 +21,7 @@ const watch = process.argv.includes("--watch") && {
                 bundle: true,
                 outdir: 'bundles/',
                 watch: watch,
+                minify: !isInWatchMode,
                 plugins: [
                     postCssPlugin({
                         plugins: [autoprefixer, tailwind],
