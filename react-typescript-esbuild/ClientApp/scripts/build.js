@@ -18,6 +18,7 @@ const watch = isInWatchMode && {
         await require("esbuild")
             .build({
                 entryPoints: files,
+                nodePaths: ['src'],
                 bundle: true,
                 outdir: 'bundles/',
                 watch: watch,
