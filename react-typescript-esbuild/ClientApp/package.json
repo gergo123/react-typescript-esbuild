@@ -45,8 +45,10 @@
     "babel-jest": "^27.3.1",
     "babel-loader": "8.2.3",
     "jest": "^27.3.1",
+    "jest-transform-stub": "^2.0.0",
     "msw": "^0.35.0",
     "postcss": "8.3.11",
-    "tailwindcss": "2.2.19"
+    "tailwindcss": "2.2.19",
+    "ts-jest": "^27.0.7"
   }
 }

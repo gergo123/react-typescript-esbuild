@@ -1,9 +1,9 @@
-import React, { useCallback, useState } from "react";
+import * as React from 'react'
 import ReactDOM from "react-dom";
-import "../../index.css"
+import "index.css"
 
 const Counter = (props: { message: string }) => {
-    const [count, setCount] = useState<number>(1);
+    const [count, setCount] = React.useState<number>(1);
 
     const increment = () => {
         setCount(count => count + 1);

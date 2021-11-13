@@ -1,13 +1,12 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Counter from '../../src/components/counter';
+import Counter from 'components/counter';
 
 export default {
     title: 'Componens/Counter',
     component: Counter,
     argTypes: {
-        backgroundColor: { control: 'color' },
     },
 } as ComponentMeta<typeof Counter>;
 
