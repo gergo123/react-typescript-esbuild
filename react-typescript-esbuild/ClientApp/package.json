@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently -n w: npm:watch-* -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\"",
-    "build": "node ./scripts/build.js",
+    "build": "tsc --noEmit&& node ./scripts/build.js",
     "prod": "tsc --noEmit&& set NODE_ENV=production&& node ./scripts/build.js",
     "watch-tsx": "tsc --watch --noEmit",
     "watch-build": "node ./scripts/build.js --watch",
@@ -21,6 +21,8 @@
     "@types/react-dom": "^17.0.11",
     "concurrently": "^6.3.0",
     "esbuild": "0.13.12",
+    "mobx": "6.3.7",
+    "mobx-react-lite": "3.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-query": "3.32.1",
@@ -49,6 +51,7 @@
     "jest-transform-stub": "^2.0.0",
     "msw": "^0.35.0",
     "postcss": "8.3.11",
+    "storybook-addon-mock": "^1.7.0",
     "tailwindcss": "2.2.19",
     "ts-jest": "^27.0.7"
   }
