@@ -1,4 +1,5 @@
-import "../index.css"
+import "./../src/components/counter.css"
+import "./../src/components/people-picker.css"
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
