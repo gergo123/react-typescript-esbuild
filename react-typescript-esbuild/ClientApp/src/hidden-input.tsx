@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { useContext } from 'react';
 import _ from 'underscore'
-import PeopleContext from 'people-context'
 
 const HiddenInputRecursive = ({ pairs, namePrefix, isArray }: any) => {
 
