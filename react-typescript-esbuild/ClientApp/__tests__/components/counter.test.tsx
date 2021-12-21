@@ -2,7 +2,7 @@
 import React from 'react'
 import { render, fireEvent, waitFor, screen, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import Counter from 'components/counter';
+import Counter from './../../src/components/counter'
 
 beforeEach(() => {
     render(<Counter message="Hello world" ></Counter>);
