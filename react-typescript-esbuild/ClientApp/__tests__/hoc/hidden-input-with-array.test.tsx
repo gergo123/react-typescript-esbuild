@@ -3,14 +3,13 @@ import React from 'react'
 import { render, fireEvent, waitFor, screen, cleanup, configure } from '@testing-library/react'
 import '@testing-library/jest-dom'
 
-import HiddenInput from 'hoc/hidden-input'
-import PeopleStore from './../../src/stores/people-store'
+import HiddenInput from 'hidden-input'
 
-class TestClass implements PeopleStore {
-    public people: any[]
-
-    getFormData(): object {
-        return [
+beforeEach(() => {
+    const props: any = {
+        isArray: true,
+        name: 'items',
+        formData: [
             {
                 id: 1,
                 name: 'John'
@@ -24,19 +23,9 @@ class TestClass implements PeopleStore {
                 }
             }
         ]
-    }
-    addPeople(...persons: any[]): void {
-        throw new Error('Method not implemented.')
-    }
-}
-
-beforeEach(() => {
-    const props: any = {
-        isArray: true,
-        name: 'items',
     };
-    var Comp = HiddenInput(() => <div>Hello from random 'component'.</div>, new TestClass)
-    render(<Comp {...props} />);
+
+    render(<HiddenInput {...props} />);
 })
 afterEach(cleanup)
 
