@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.people-item {
+    @apply rounded bg-orangeYellow-light p-3 mt-2 text-gray-800 font-bold
+}
+
+.rounded-box {
+    @apply md:w-49 rounded-lg shadow-md appearance-none block p-2
+}
+
+.h1 {
+    @apply font-bold text-lg text-gray-700 my-1 mx-2
+}
+
+.btn {
+    @apply bg-greenEagle text-orangeYellow flex items-center rounded-md border border-gray-300 hover:bg-greenEagle-dark active:bg-paradisePink hover:text-white p-4
+}
+
+.text-input {
+    @apply focus:ring-2 focus:ring-blue-500 focus:outline-none w-full text-sm leading-6 text-gray-900 placeholder-gray-400 rounded-md py-2 pl-3 ring-1 ring-gray-200 shadow-sm mt-2
+}
