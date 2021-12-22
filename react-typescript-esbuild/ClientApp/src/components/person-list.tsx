@@ -20,7 +20,7 @@ const PersonList = ({ ...props }) => {
     React.useEffect(() => {
         const { initialData } = props;
         if (initialData && initialData.length > 0) {
-            setPeople(initialData);
+            setPeople(initialData.map((item: Person) => new Person(item.Id, item.Name)));
         }
     }, [props.initialData]);
 
