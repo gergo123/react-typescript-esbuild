@@ -1,4 +1,6 @@
 import * as React from 'react'
+import './person-list.css'
+
 import HiddenInput from 'hidden-input';
 import Person from 'models/person';
 
