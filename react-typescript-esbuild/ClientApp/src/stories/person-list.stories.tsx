@@ -18,6 +18,14 @@ export const Primary = Template.bind({});
 Primary.args = {
 };
 
+export const WithInitData = Template.bind({});
+WithInitData.args = {
+    initialData: [{
+        Id: 1,
+        Name: 'Joseph',
+    }]
+};
+
 var p1 = new Person(2, 'Bela 2');
 var p2 = new Person(3, 'Bela 3');
 var p3 = new Person(4, 'Bela 4');
