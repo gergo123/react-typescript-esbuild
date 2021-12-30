@@ -16,7 +16,6 @@ const Template: any = (args: any) => <PersonList {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    LevelsOfExpertise: ['Low', 'Medium', 'High']
 };
 
 var p1 = new Person(2, 'Bela 2');

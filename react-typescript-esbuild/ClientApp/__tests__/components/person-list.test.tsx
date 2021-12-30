@@ -6,8 +6,6 @@ import PersonList from './../../src/components/person-list'
 
 beforeEach(() => {
     const props: any = {
-        LevelsOfExpertise: [],
-        PickedPeopleIds: []
     };
     render(<PersonList {...props} />);
 })
