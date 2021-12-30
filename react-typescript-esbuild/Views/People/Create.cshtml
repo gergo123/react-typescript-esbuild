@@ -1,0 +1,17 @@
+﻿@model PersonViewModel[]
+@{
+    ViewData["Title"] = "Form";
+}
+
+<div id="react-person-list"></div>
+
+<link rel="stylesheet" href="~/js/person-list.css" />
+<script src="~/js/person-list.js"></script>
+<script>
+    window.PersonList({
+        initialData: [{
+            Id: 1,
+            Name: 'Joseph',
+        }]
+    });
+</script>
