@@ -32,7 +32,7 @@ const PersonList = ({ ...props }) => {
                 var nw = new Person(item.Id, item.Name);
                 nw.Name = item.Name;
                 nw.Id = item.Id;
-                return nw
+                return nw;
             }));
         }
     }, [props.initialData]);
